@@ -10,6 +10,10 @@
 # Description
 This is a boilerplate buildsystem to get you up and running 
 
-# Features
+# Installing Global npm packages
+- bower
 
-    - Version Control : GIT
+# Features
+- Version Control : GIT 
+- Package Manager : npm, bower
+    
