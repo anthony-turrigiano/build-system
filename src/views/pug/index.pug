@@ -1,0 +1,14 @@
+doctype html
+html
+    include components/head.pug
+    
+    body.page-index
+        
+        <!--[if lte IE 9]>
+            p.browserupgrade
+                You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+        <![endif]-->
+        
+        include components/banner.pug
+        
+        script(src="./public/js/build.js")
