@@ -17,7 +17,7 @@ This is a boilerplate buildsystem to get you up and running
 # Project Configuration
 - src : config/index.js
 - fields :
-    
+    - hostname : enter url
     - env : (choice:development, production) (default: "development")
     - host : (default: '0.0.0.0')
     - port : (default: 8081)

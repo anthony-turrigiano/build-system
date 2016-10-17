@@ -3,8 +3,9 @@
 const env = process.env.NODE_ENV = "development";
 
 const dev = {
+  hostname : "<enter url>",
   host : '0.0.0.0',
-  port : 8080,
+  port : 8081,
   project : {
     title : "BuildSystem",
     author : "Author Name <author email>", 
