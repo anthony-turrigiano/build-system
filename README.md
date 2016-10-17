@@ -13,6 +13,7 @@ This is a boilerplate buildsystem to get you up and running
 # Installing Global npm packages
 - bower
 - nodemon
+- gulp
 
 # Project Configuration
 - src : config/index.js
