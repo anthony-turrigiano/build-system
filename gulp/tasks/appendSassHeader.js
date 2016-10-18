@@ -13,7 +13,7 @@ const $ = require("gulp-load-plugins")({pattern: ["*"]});
         gulp.task("appendSassHeader", function(){
 
               return gulp
-                    .src(config.paths.sass + "/*.scss")
+                    .src(config.paths.sass + "/**/*.scss")
                     .pipe($.replace(/^\/\*\s*\n([^\*]*(\*[^\/])?)*\*\/\W/, ""))
                     .pipe($.wrapper({ header: function(file){
                         var filename = file.path.replace(file.base, '').slice(0,-5);
