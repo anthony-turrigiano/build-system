@@ -34,6 +34,7 @@
     return gulp
                 .src(config.paths.css + "/style.css")
                 .pipe($.plumber())
+                .pipe($.stripComments())
                 .pipe($.postcss(processors))
                 .pipe($.purifycss([config.paths.client + "/**/*.js", config.paths.js + "/**/*.js",config.views.base + "/**/*.*"]))
                 .pipe($.size({ title: 'Styles', gzip: true, showFiles: true }))
