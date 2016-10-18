@@ -3,7 +3,7 @@
 const env = process.env.NODE_ENV = "development";
 
 const dev = {
-  hostname : "<enter url>",
+  hostname : process.env.C9_HOSTNAME,
   host : '0.0.0.0',
   port : 8081,
   project : {
@@ -15,7 +15,8 @@ const dev = {
     sass : "./sass",
     css : "./src/public/css",
     dist : {
-      css : "./dist/public/css"
+      css : "./dist/public/css",
+      js : "./dist/public/js"
     },
     js : "./src/public/js",
     client : "./src/client",

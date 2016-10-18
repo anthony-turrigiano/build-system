@@ -7,5 +7,6 @@ const server = http.createServer(app).listen(config.port, config.host, () =>{
     const host = server.address().address;
     const port = server.address().port;
     
+    console.log("Hostame : " + config.hostname);
     console.log("Server Listening on %s:%s", host, port);
 });
