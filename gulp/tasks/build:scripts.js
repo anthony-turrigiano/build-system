@@ -13,7 +13,7 @@ const banner = ['/**',
   ' */',
   ''].join('\n');
 
-gulp.task("build:scripts", ["delBuild-js"], function(){
+gulp.task("build:scripts", function(){
     return gulp
                 .src([
                         "!" + config.paths.js + "/build.min.js",
