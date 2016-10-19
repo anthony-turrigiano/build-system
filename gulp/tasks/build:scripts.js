@@ -16,6 +16,7 @@ const banner = ['/**',
 gulp.task("build:scripts", ["delBuild-js"], function(){
     return gulp
                 .src([
+                        "!" + config.paths.js + "/build.min.js",
                         "!" + config.paths.js + "/build.js", 
                         config.paths.js + "/**/*.js"]
                     )
