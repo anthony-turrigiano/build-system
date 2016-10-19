@@ -16,5 +16,5 @@
       }
     });
      gulp.watch([config.paths.sass +"/**/*.scss"], ["build:dist-styles"], reload);
-     gulp.watch(["!" + config.paths.js +"/build.min.js", config.paths.js +"/**/*.js"], ["build:dist-scripts"], reload);
+     gulp.watch(["!" + config.paths.js +"/build.min.js", "!" + config.paths.js +"/build.js", config.paths.js +"/**/*.js"], ["build:dist-scripts"], reload);
  });
